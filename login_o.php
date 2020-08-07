@@ -1,4 +1,3 @@
-
 <html>
 <head>
 	<title>Login</title>
@@ -12,7 +11,7 @@
 			<h3 align="center">User Login</h3>
 			<div class="image">
 				</div>
-			<form action="includes/login.inc.php" method="POST">
+			<form action="includes/login_o.inc.php" method="POST">
 				<!--<label for="name">Name :</label><input type="text" name="name" placeholder="Enter your name"><br><br>-->
 				<label for="mailid">Email :</label><input type="email" name="mailuid" placeholder="Enter your email"><br><br>
 				<label for="pwd">Password :</label><input type="password" name="pwd" placeholder="Enter your password"><br><br><br>
@@ -31,7 +30,7 @@
 			?>
 
 			</form>
-			<p align="center">Not registered ?<br> <a href="signup.php"> Click here to register</a></p>
+			<p align="center">Not registered ?<br> <a href="signup_o.php"> Click here to register</a></p>
 		</div>
 	</div>
 <?php

@@ -1,0 +1,32 @@
+.box{
+	margin : 50px 600px;
+	width: 350;
+	height: 600;
+	border: solid #CECECE  1px;
+	grid-auto-columns: 10px
+	
+	
+	
+	
+	opacity:0.8;
+
+		background: rgb(229, 152, 102  );
+ackground: linear-gradient(90deg, rgba(238,159,159,1) 0%, rgba(234,175,203,1) 63%, rgba(255,153,251,0.7570378493194152) 100%);
+}
+
+.box:hover{
+		opacity: 3.0;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		background: rgb(214, 137, 16   );
+}
+h3{
+	ext-shadow: 0px 0px 1px black;
+	font:"Comic Sans MS", cursive, sans-serif;
+	font-size: 35px;
+	color: white;
+}
+h1{
+	font:"Comic Sans MS", cursive, sans-serif;
+	font-size: 18px;
+	color: white;
+}

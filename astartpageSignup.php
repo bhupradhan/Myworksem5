@@ -8,7 +8,7 @@
 <body>
 <div class="box">
 	<pre>
-			<p align="center">Select login</p>
+			<p align="center">Select signup</p>
 			<div class="image">
 				<img src="css/images/icons8-lock-256.png">
 	</div>
@@ -21,13 +21,13 @@
 		
 		<?php
 if (isset($_POST['user'])) {
-	header("location:login_u.php");
+	header("location:signup.php");
 }
 if (isset($_POST['admin'])) {
 	header("location:login_a.php");
 }
 if (isset($_POST['owner'])) {
-	header("location:login_o.php");
+	header("location:signup_o.php");
 }
 if (isset($_POST['manager'])) {
 	header("location:login_m.php");

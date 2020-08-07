@@ -1,5 +1,5 @@
 body{
-	background-image: url(images/heade.png);
+	background-image: url(images/header.png);
 }
 .stick{
 	top:10;
@@ -13,10 +13,11 @@ h2{
 }
 ul.navbar{
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin: 1;
+  padding: 1;
   overflow: hidden;
-  background-color: #000000  ;
+  opacity: 1;
+  background-color: #515A5A   ;
 }
 ul.navbar li{
 	float : left;
@@ -29,7 +30,8 @@ ul.navbar a{
   text-decoration: none;
 }
 ul.navbar li a:hover:not(.active) {
-	background-color: #17202A;
+	background-color: #17202A   ;
+	opacity: 0.8;
 }
 ul.navbar li a.active {
 	background-color: #4CAF50;

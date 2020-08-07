@@ -22,16 +22,16 @@ session_start();
 			<li><a href="" >Sites</a></li>
 			<li><a href="">about me</a></li>
 			<li><a href="">contact</a></li>
-			<li><a href="signup.php">Signup</a></li>
+			
 			<li>
 			<?php
 
-			if(isset($_SESSION['userId'])){
+			if(isset($_SESSION['userId'])||isset($_SESSION['ouserId'])){
 			/*	echo '<form action="includes/logout.inc.php" method="post">
 				
 				<button type="submit" name="logout-submit">Logout</button>
 			</form><p> You are logged in </p>'; */
-			echo'<a href="includes/logout.inc.php" name="logout-sbmit">Logout</a><p>you are logged in <p>';
+			echo'<a href="includes/logout.inc.php" name="logout-sbmit">Logout</a>';
 
 			}
 			else{
@@ -39,7 +39,7 @@ session_start();
 				
 				<button type="submit">Login</button>
 			</form>'; */
-			echo'<a href="astartpage.php">Login</a>';
+			echo'<li><a href="astartpage.php">Login</a></li><li><a href="astartpageSignup.php">Signup</a></li>';
 			}
 			?>
 		</li>

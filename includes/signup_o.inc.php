@@ -11,17 +11,17 @@ if(isset($_POST['signup-submit'])){
 	
 	if($password !== $passwordRepeat){
 
-		header("Location: ../signup.php?error=passwordcheckuid".$username."&mail=".$email);
+		header("Location: ../signup_o.php?error=passwordcheckuid".$username."&mail=".$email);
 		exit();
 	}
 	else{
 
-		$sql = "SELECT uidusers FROM users WHERE uidUsers=?";
+		$sql = "SELECT ouidusers FROM ownerusers WHERE ouidUsers=?";
 		$stmt = mysqli_stmt_init($conn);
 
 		if(!mysqli_stmt_prepare($stmt, $sql)){
 
-			header("Location: ../signup.php?error=sqlerror");
+			header("Location: ../signup_o.php?error=sqlerror");
 		exit();
 		}
 		else{
@@ -31,15 +31,15 @@ if(isset($_POST['signup-submit'])){
 			mysqli_stmt_store_result($stmt);
 			$resultCheck = mysqli_stmt_num_rows($stmt);
 			if($resultCheck >0){
-				header("Location: ../signup.php?error=userTaken&mail=".$email);
+				header("Location: ../signup_o.php?error=userTaken&mail=".$email);
 		exit();
 	}
 		else{
-			$sql = "INSERT INTO users (uidUsers, emailUsers, pwdUsers ) VALUES (?, ?, ?)";
+			$sql = "INSERT INTO ownerusers (ouidUsers, oemailUsers, opwdUsers ) VALUES (?, ?, ?)";
 			$stmt = mysqli_stmt_init($conn);
 			if(!mysqli_stmt_prepare($stmt, $sql)){
 
-				header("Location: ../signup.php?error=sqlError");
+				header("Location: ../signup_o.php?error=sqlError");
 		exit();
 	}
 			else{
@@ -47,7 +47,7 @@ if(isset($_POST['signup-submit'])){
 			mysqli_stmt_bind_param($stmt, "sss", $username, $email, $hashedPwd );
 			mysqli_stmt_execute($stmt);
 
-				header("Location: ../signup.php?signup=success");
+				header("Location: ../signup_o.php?signup=success");
 				exit();
 
 			}
