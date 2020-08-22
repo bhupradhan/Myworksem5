@@ -1,14 +1,17 @@
 body{
-	background-image: url(images/header.png);
+	background-image: url(images/hader.png);
 }
 .stick{
-	top:10;
+	top:0;
 	position: sticky;
+	width: 100%;
+
+
 }
 
 h2{
 	text-align: center;
-	
+	color: black;
 	text-decoration: bold;
 }
 ul.navbar{
@@ -17,24 +20,27 @@ ul.navbar{
   padding: 1;
   overflow: hidden;
   opacity: 1;
-  background-color: #515A5A   ;
+  ackground-color:#0078FD ;
+  background-image: url(images/header.png);
+
 }
 ul.navbar li{
 	float : left;
 }
 ul.navbar a{
 	display: block;
-  color: white;
+  
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  color: black;
 }
 ul.navbar li a:hover:not(.active) {
 	background-color: #17202A   ;
 	opacity: 0.8;
 }
 ul.navbar li a.active {
-	background-color: #4CAF50;
+	background-color:#EAECEE;
 }
 ul.navbar li.right {
 	float: right;

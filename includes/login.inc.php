@@ -34,7 +34,7 @@ if(isset($_POST['login-submit'])){
 
 				if($pwdCheck == false){
 
-				header("Location: ../index.php?error=wrongpwd");
+				header("Location: ../login_u.php?error=wrongpwd");
 				exit();
 				}
 			
@@ -61,7 +61,7 @@ if(isset($_POST['login-submit'])){
 			}
 			else{
 
-					header("Location: ../index.php?error=Nouserfound");
+					header("Location: ../login_u.php?error=Nouserfound");
 				exit();
 
 			}	

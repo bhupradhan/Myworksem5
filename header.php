@@ -26,7 +26,9 @@ session_start();
 			<li>
 			<?php
 
-			if(isset($_SESSION['userId'])||isset($_SESSION['ouserId'])){
+			//if(isset($_SESSION['userId'])||isset($_SESSION['ouserId'])||isset($_SESSION['auserId'])||isset($_SESSION['muserId'])){
+		    if(isset($_SESSION['userId'])){
+
 			/*	echo '<form action="includes/logout.inc.php" method="post">
 				
 				<button type="submit" name="logout-submit">Logout</button>
@@ -39,7 +41,7 @@ session_start();
 				
 				<button type="submit">Login</button>
 			</form>'; */
-			echo'<li><a href="astartpage.php">Login</a></li><li><a href="astartpageSignup.php">Signup</a></li>';
+			echo'<li><a href="login_u.php">Login</a></li><li><a href="signup.php">Signup</a></li>';
 			}
 			?>
 		</li>
